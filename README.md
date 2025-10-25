@@ -1,87 +1,75 @@
-# Welcome to React Router!
+RESUMAI - AI-Powered Resume Analysis Platform
+Based on the code and conversations, here's a comprehensive description of your project:
 
-A modern, production-ready template for building full-stack React applications using React Router.
+Overview
+RESUMAI is a modern web application that provides intelligent resume analysis and feedback using AI. It helps job seekers optimize their resumes for Applicant Tracking Systems (ATS) and improve their overall presentation.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+Key Features
+1. Resume Upload & Processing
+Users can upload PDF resumes through an intuitive drag-and-drop interface
 
-## Features
+The system converts PDFs to images for preview display
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+Files are securely stored using Puter.js cloud storage
 
-## Getting Started
+2. AI-Powered Analysis
+The application analyzes resumes across multiple dimensions:
 
-### Installation
+ATS Compatibility Score - Measures how well the resume performs with Applicant Tracking Systems
 
-Install the dependencies:
+Tone & Style - Evaluates professional language and formatting consistency
 
-```bash
-npm install
-```
+Content Quality - Assesses the relevance and impact of resume content
 
-### Development
+Structure - Reviews organization, layout, and readability
 
-Start the development server with HMR:
+Skills Presentation - Analyzes how technical and soft skills are showcased
 
-```bash
-npm run dev
-```
+3. Intelligent Feedback System
+Provides actionable tips categorized as "good" (strengths) or "improve" (areas for enhancement)
 
-Your application will be available at `http://localhost:5173`.
+Each tip includes detailed explanations
 
-## Building for Production
+Visual score badges with color coding (green for strong, yellow for good start, red for needs work)
 
-Create a production build:
+4. User Experience
+Clean, responsive UI built with React and Tailwind CSS
 
-```bash
-npm run build
-```
+Server-side rendering (SSR) for fast initial load times
 
-## Deployment
+Real-time processing status updates during analysis
 
-### Docker Deployment
+Interactive accordion-based results display
 
-To build and run using Docker:
+Side-by-side view of resume image and feedback
 
-```bash
-docker build -t my-app .
+5. Technical Stack
+Frontend: React with React Router, TypeScript
 
-# Run the container
-docker run -p 3000:3000 my-app
-```
+Styling: Tailwind CSS with custom badge components
 
-The containerized application can be deployed to any platform that supports Docker, including:
+State Management: Zustand
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
+Backend Services: Puter.js (cloud storage, AI, authentication, key-value database)
 
-### DIY Deployment
+PDF Processing: pdfjs-dist for PDF to image conversion
 
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
+Deployment: SSR-capable framework with hydration support
 
-Make sure to deploy the output of `npm run build`
+6. Authentication & Security
+User authentication via Puter.js
 
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
+Secure file storage with unique identifiers
 
-## Styling
+Protected routes requiring authentication
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+Use Cases
+Job seekers preparing applications
 
----
+Career counselors providing resume feedback
 
-Built with ❤️ using React Router.
+Recruiters evaluating candidate materials
+
+Students creating their first professional resumes
+
+This project demonstrates modern web development practices including SSR hydration handling, cloud integration, AI-powered analysis, and responsive design principles.
