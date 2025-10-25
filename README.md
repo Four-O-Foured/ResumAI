@@ -73,3 +73,5 @@ Recruiters evaluating candidate materials
 Students creating their first professional resumes
 
 This project demonstrates modern web development practices including SSR hydration handling, cloud integration, AI-powered analysis, and responsive design principles.
+
+Route to "/wipe" to clear All Data/Resumes from the Database.
