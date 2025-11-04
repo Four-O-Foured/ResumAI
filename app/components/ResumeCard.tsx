@@ -24,7 +24,7 @@ const ResumeCard = ({
 
   return (
     <Link
-      to={`/resume/${id}`}
+      to={`/review/${id}`}
       className="resume-card animate-in fade-in duration-1000"
     >
       <div className="resume-card-header">
