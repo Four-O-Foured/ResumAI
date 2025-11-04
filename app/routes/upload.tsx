@@ -34,9 +34,9 @@ const upload = () => {
     jobDescription,
     file,
   }: {
-    companyName: string;
+    companyName: string | null;
     jobTitle: string;
-    jobDescription: string;
+    jobDescription: string | null;
     file: File | null;
   }) => {
     setisProcessing(true);
@@ -171,9 +171,11 @@ const upload = () => {
     const formData = e.currentTarget;
     if (!formData) return;
 
-    const companyName = formData.companyName.value as string;
+    const companyName = formData.companyName.value as string | "";
     const jobTitle = formData.jobTitle.value as string;
-    const jobDescription = formData.jobDescription.value as string;
+    const jobDescription = formData.jobDescription.value as string | "";
+
+    
 
     // CRITICAL FIX: Validate file before submission
     if (!file) {

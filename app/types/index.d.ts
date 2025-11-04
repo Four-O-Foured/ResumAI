@@ -1,14 +1,14 @@
 interface Job {
   title: string;
-  description: string;
+  description: string | null;
   location: string;
   requiredSkills: string[];
 }
 
 interface Resume {
   id: string;
-  companyName?: string;
-  jobTitle?: string;
+  companyName?: string | null;
+  jobTitle?: string | null;
   imagePath: string;
   resumePath: string;
   feedback: Feedback;
