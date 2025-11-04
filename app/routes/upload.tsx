@@ -238,7 +238,7 @@ const upload = () => {
                   name="companyName"
                   id="companyName"
                   placeholder="Company Name"
-                  required
+                 
                 />
               </div>
               <div className="form-div">
@@ -258,7 +258,7 @@ const upload = () => {
                   name="jobDescription"
                   id="jobDescription"
                   placeholder="Job Description"
-                  required
+                  
                 />
               </div>
               <div className="form-div">
